@@ -1,0 +1,12 @@
+<table padding="2px">
+  	<thead>
+        <th>Array Index</th>
+  			<th>Name</th>
+  	</thead>
+  	<tbody>
+  			<tr *ngFor="let user of users;let i=index">
+          <td ng-style="{'color':(`$i`%2 ==0 ? 'green':'red')}">{{i}}</td>
+  				<td ng-style="{'color':(`$i`%2 ==0 ? 'green':'red')}">{{user.name}}</td>
+  			</tr>
+  	</tbody>
+ </table>
